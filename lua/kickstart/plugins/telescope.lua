@@ -17,7 +17,15 @@ return {
 
         -- `build` is used to run some command when the plugin is installed/updated.
         -- This is only run then, not every time Neovim starts up.
-        build = 'make',
+        -- If os is windows, build = 'cl', else build = 'make'
+        build = function()
+          if vim.fn.has 'win32' == 1 then
+            return 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build'
+          else
+            return 'make'
+          end
+        end,
+
 
         -- `cond` is a condition used to determine whether this plugin should be
         -- installed and loaded.
