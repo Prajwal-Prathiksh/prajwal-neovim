@@ -107,3 +107,11 @@ require 'lazy-plugins'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+
+-- Highlight column number 80 for better code readability
+vim.opt.colorcolumn = '80'
+vim.cmd('highlight ColorColumn ctermbg=0 guibg=#3e3e3e')
+
+-- Highlight the current line for better code readability
+vim.cursorline = true
+vim.cmd('highlight CursorLine guibg=#313131')
