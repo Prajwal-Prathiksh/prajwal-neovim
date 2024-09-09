@@ -64,6 +64,6 @@ vim.opt.scrolloff = 10
 
 -- Spelling
 vim.opt.spelllang = 'en_us'
-vim.opt.spell = true
+vim.opt.spell = false
 
 -- vim: ts=2 sts=2 sw=2 et
