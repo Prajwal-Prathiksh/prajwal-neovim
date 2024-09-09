@@ -57,14 +57,14 @@ return {
 
       -- Document existing key chains
       spec = {
-        { '<leader>c', group = '[C]ode', mode = { 'n', 'x' } },
-        { '<leader>d', group = '[D]ocument' },
+        { '<leader>c', group = 'Code [C]', mode = { 'n', 'x' } },
+        { '<leader>d', group = 'Document [D]' },
         { '<leader>e', group = 'File [E]xplorer' },
         { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
-        { '<leader>r', group = '[R]ename' },
-        { '<leader>s', group = '[S]earch' },
-        { '<leader>t', group = '[T]oggle' },
-        { '<leader>w', group = '[W]indow Management' },
+        { '<leader>r', group = 'Rename [R]' },
+        { '<leader>s', group = 'Search [S]' },
+        { '<leader>t', group = 'Toggle [T]' },
+        { '<leader>w', group = 'Window Management [W]' },
         { '<leader>k', group = 'Wor[K]space Management' },
       },
     },
