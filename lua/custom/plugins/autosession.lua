@@ -8,7 +8,7 @@ return {
             auto_restore_enabled = true,
         })
 
-        vim.keymap.set("n", "<leader>ks", "<cmd>SaveSession<CR>", { desc = "Wor[K]space [S]ave session" })
-        vim.keymap.set("n", "<leader>kr", "<cmd>RestoreSession<CR>", { desc = "Wor[K]space [R]estore session" })
+        vim.keymap.set("n", "<leader>ks", "<cmd>SessionSave<CR>", { desc = "Wor[K]space [S]ave session" })
+        vim.keymap.set("n", "<leader>kr", "<cmd>SessionRestore<CR>", { desc = "Wor[K]space [R]estore session" })
     end,
 }
