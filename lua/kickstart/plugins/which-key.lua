@@ -65,6 +65,7 @@ return {
         { '<leader>s', group = '[S]earch' },
         { '<leader>t', group = '[T]oggle' },
         { '<leader>w', group = '[W]indow Management' },
+        { '<leader>k', group = 'Wor[K]space Management' },
       },
     },
   },
