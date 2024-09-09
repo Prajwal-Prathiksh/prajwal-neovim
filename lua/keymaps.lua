@@ -42,4 +42,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+-- Toggle Spell Check
+vim.keymap.set('n', '<leader>ts', '<cmd>set spell!<CR>', { desc = '[T]oggle [S]pell check' })
+
 -- vim: ts=2 sts=2 sw=2 et
